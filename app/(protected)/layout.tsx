@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <AppSidebar />
                 <main className="pt-[60px] w-screen h-screen flex flex-col bg-secondary">
                     <SidebarTrigger />
-                    <div className="m-auto mt-16 w-[856px] border-2 p-4 rounded-lg">{children}</div>
+                    <div className="m-auto mt-16 w-[856px] border-2 p-6 rounded-lg">{children}</div>
                 </main>
             </SidebarProvider>
         </div>

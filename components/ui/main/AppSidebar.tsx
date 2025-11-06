@@ -5,7 +5,6 @@ import {
     SidebarContent,
     SidebarGroup,
     SidebarGroupContent,
-    SidebarGroupLabel,
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
@@ -45,7 +44,7 @@ export function AppSidebar() {
         <Sidebar>
             <SidebarContent className="pt-[60px] bg-background">
                 <SidebarGroup>
-                    <SidebarGroupLabel>Application</SidebarGroupLabel>
+
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (
