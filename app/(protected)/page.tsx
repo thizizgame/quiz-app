@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 import { ArticleInput } from "@/components/ui/main/ArticleInput";
 
 export default function Home() {

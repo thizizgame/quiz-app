@@ -37,7 +37,7 @@ export const ArticleInput = () => {
         const data = await response.json();
 
         if (data) {
-            setQuiz(JSON.parse(data.message) as QuizItem[])
+            setQuiz(data.message as QuizItem[])
         }
 
         console.log(data);
@@ -95,13 +95,14 @@ export const ArticleInput = () => {
 
 
                 <p>{quiz[0].question}</p>
-                <p>{quiz[0].options[0]}</p>
+                {quiz[0].options[0]}
                 <p>{quiz[0].options[1]}</p>
+                <p>{quiz[0].options[2]}</p>
+                <p>{quiz[0].options[3]}</p>
+                <p>{quiz[0].options[0]}</p>
 
 
-                <Button onClick={OnTakeQuiz} className="w-fit mt-4" disabled={!(title && input)}>
-                    Take a Quiz
-                </Button>
+
             </div>
         )
     }
